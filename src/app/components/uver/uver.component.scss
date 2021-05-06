@@ -1,0 +1,56 @@
+.uver {
+    background-color:  rgb(176, 212, 235);
+    margin: 0;
+    width: 35%;
+    height: 50rem;
+    align-items: left;
+}
+
+.button {
+    background-color: #588f7b;
+    margin: 10px;
+    width: 25%;
+    height: 5rem;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+
+}
+
+.buttonUver {
+    background-color: #588f7b;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+}
+
+.menuUver {
+    position: relative;
+    display: inline-block;
+}
+
+.uverContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.uverContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.uverContent a:hover {background-color: #ddd;}
+.menuUver:hover .uverContent {display: block;}
+
+.pocet_button {
+    background-color: #e2602c;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+}

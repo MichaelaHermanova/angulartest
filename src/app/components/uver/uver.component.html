@@ -1,0 +1,21 @@
+<div class="uver">
+  <h1>Zadejte výši úvěru</h1>
+  <form action="uverVyse">
+    <label for="quantity"></label>
+    <input type="number" id="quantity" name="quantity" min="5000" [(ngModel)]="money" (input)="lent($event, 'money')">
+  </form>
+  <h1>Vyberte počet měsíců</h1>
+  <div class="menuUver">
+    <select (change)="lent($event, 'months')">
+      <option *ngFor="let month of months">{{month}} mesice</option>
+    </select>
+  </div>
+  <div *ngIf="money && month">
+    <p>Výše úvěru bude {{object['vyseUveru']}}</p>
+    <p>Výše splátky bude {{object['vyseSplatky']}}</p>
+    <p>Tento úvěr budete splácet {{ month }} měsíce</p>
+    <p>Výše úroku je 5% p.a.</p>
+    <p>Celková vrácená suma je {{object['celkovaSuma']}}</p>
+  </div>
+  <button class="button">Chci si půjčit {{ money }}</button>
+</div>
